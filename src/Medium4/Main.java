@@ -11,28 +11,28 @@ public class Main {
         String[] names = new String[2];
         Player player = new Player(names, a);
         Game game = new Game(a, b, c);
-        player.ScanName();
+        player.scanName();
         while (!replay.equals("нет")) {
             c = 0;
-            b = game.Computer(b);
+            b = game.computer(b);
             while (true) {
-                a = player.ScanIndex1();
-                c = game.Player(a, c);
+                a = player.scanIndex1();
+                c = game.player(a, c);
                 if (c > b) {
                     System.out.println("Проиграл " + player.printName1());
-                    count2 = player.Count2(count2);
+                    count2 = player.count2(count2);
                     break;
                 }
-                a = player.ScanIndex2();
-                c = game.Player(a, c);
+                a = player.scanIndex2();
+                c = game.player(a, c);
                 if (c > b) {
                     System.out.println("Проиграл " + player.printName2());
-                    count1 = player.Count1(count1);
+                    count1 = player.count1(count1);
                     break;
                 }
 
             }
-            replay = game.Replay();
+            replay = game.replay();
         }
         if (count1 > count2) {
             System.out.println("Победил " + player.printName1() + " , побед: " + count1);

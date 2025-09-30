@@ -12,7 +12,7 @@ public class Game {
         this.fieldComp = fieldComp;
     }
 
-    public int[][] CompMove(int[][] fieldPlayer) {
+    public int[][] compMove(int[][] fieldPlayer) {
         int a = new Random().nextInt(10);
         int b = new Random().nextInt(10);
         while (fieldPlayer[a][b] == 4 || fieldPlayer[a][b] == 3) {
@@ -54,7 +54,7 @@ public class Game {
         return fieldPlayer;
     }
 
-    public int[][] PlayerMove(int[][] fieldComp) {
+    public int[][] playerMove(int[][] fieldComp) {
         boolean c;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите координаты выстрела");
@@ -100,7 +100,7 @@ public class Game {
         return fieldComp;
     }
 
-    public boolean CompWin(int[][] fieldPlayer) {
+    public boolean compWin(int[][] fieldPlayer) {
         boolean a = true;
         for (int i = 0; i < fieldPlayer.length; i++) {
             for (int j = 0; j < fieldPlayer.length; j++) {
@@ -112,7 +112,7 @@ public class Game {
         return a;
     }
 
-    public boolean PlayerWin(int[][] fieldComp) {
+    public boolean playerWin(int[][] fieldComp) {
         boolean a = true;
         for (int i = 0; i < fieldComp.length; i++) {
             for (int j = 0; j < fieldComp.length; j++) {

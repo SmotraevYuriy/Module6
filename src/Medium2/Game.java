@@ -1,8 +1,6 @@
 package Medium2;
 
-import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Game {
     String[][] field;
@@ -21,7 +19,7 @@ public class Game {
         this.field = field;
     }
 
-    public String Computer() {
+    public String computer() {
         a = Math.abs(new Random().nextInt(3));
         b = Math.abs(new Random().nextInt(3));
         while (field[a][b] != null) {
@@ -32,12 +30,12 @@ public class Game {
         return field[a][b];
     }
 
-    public String Player() {
+    public String player() {
         field[a][b] = "X";
         return field[a][b];
     }
 
-    public void Field() {
+    public void field() {
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field.length; j++) {
                 System.out.print(field[i][j] + " ");
@@ -46,7 +44,7 @@ public class Game {
         }
     }
 
-    public boolean WinnerX() {
+    public boolean winnerX() {
         for (int i = 0; i < field.length; i++) {
             int x = 0;
             int y = 0;
@@ -80,7 +78,7 @@ public class Game {
         return c;
     }
 
-    public boolean Winner0() {
+    public boolean winner0() {
         for (int i = 0; i < field.length; i++) {
             int x = 0;
             int y = 0;
@@ -114,7 +112,7 @@ public class Game {
             return d;
     }
 
-    public boolean Draw() {
+    public boolean draw() {
         int x = 0;
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field.length; j++) {

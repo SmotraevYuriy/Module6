@@ -16,13 +16,13 @@ public class Main {
         int e = 0;
         String next = null;
         Card card = new Card();
-        value = card.Value();
-        array = card.Array();
-        cards = card.Cards();
+        value = card.value();
+        array = card.array();
+        cards = card.cards();
         Game game = new Game(array, value, cards);
-        c = game.StartComp();
-        cardsComp = game.CardsComp();
-        e = game.StartPlayer();
+        c = game.startComp();
+        cardsComp = game.cardsComp();
+        e = game.startPlayer();
         if (e == 21) {
             System.out.println("Ваши очки: " + e + ", вы победили.");
         } else {
@@ -34,7 +34,7 @@ public class Main {
             }
             if (next.equals("да")) {
                 while (!next.equals("нет")) {
-                    e = game.AddCard( e, j);
+                    e = game.addCard( e, j);
                     j++;
                     if (e == 21) {
                         break;

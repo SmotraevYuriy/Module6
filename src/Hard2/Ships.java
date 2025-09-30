@@ -14,7 +14,7 @@ public class Ships {
         this.fieldPlayer = fieldPlayer;
     }
 
-    public int[][] Comp4Ship(int[][] fieldComp) {
+    public int[][] comp4Ship(int[][] fieldComp) {
         int a = new Random().nextInt(2);
         int b = 0;
         int c = 0;
@@ -85,7 +85,7 @@ public class Ships {
     }
 
 
-    public int[][] Comp3Ship(int[][] fieldComp) {
+    public int[][] comp3Ship(int[][] fieldComp) {
         int a = new Random().nextInt(2);
         int b = 0;
         int c = 0;
@@ -162,7 +162,7 @@ public class Ships {
         return fieldComp;
     }
 
-    public int[][] Comp2Ship(int[][] fieldComp) {
+    public int[][] comp2Ship(int[][] fieldComp) {
         int a = new Random().nextInt(2);
         int b = 0;
         int c = 0;
@@ -239,7 +239,7 @@ public class Ships {
         return fieldComp;
     }
 
-    public int[][] Comp1Ship(int[][] fieldComp) {
+    public int[][] comp1Ship(int[][] fieldComp) {
         int b = 0;
         int c = 0;
         b = new Random().nextInt(10);
@@ -278,7 +278,7 @@ public class Ships {
     }
 
 
-    public int[][] Player4Ship(int[][] fieldPlayer) {
+    public int[][] player4Ship(int[][] fieldPlayer) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Как будет размещаться ваш четырехпалубный корабль от стартовых координат, вниз или вправо?");
         String a = scanner.next();
@@ -366,7 +366,7 @@ public class Ships {
         return fieldPlayer;
     }
 
-    public int[][] Player3Ship(int[][] fieldPlayer) {
+    public int[][] player3Ship(int[][] fieldPlayer) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Как будет размещаться ваш трехпалубный корабль от стартовых координат, вниз или вправо?");
         String a = scanner.next();
@@ -455,7 +455,7 @@ public class Ships {
         return fieldPlayer;
     }
 
-    public int[][] Player2Ship(int[][] fieldPlayer) {
+    public int[][] player2Ship(int[][] fieldPlayer) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Как будет размещаться ваш двухпалубный корабль от стартовых координат, вниз или вправо?");
         String a = scanner.next();
@@ -542,7 +542,7 @@ public class Ships {
         return fieldPlayer;
     }
 
-    public int[][] Player1Ship(int[][] fieldPlayer) {
+    public int[][] player1Ship(int[][] fieldPlayer) {
         Scanner scanner = new Scanner(System.in);
         int b = 0;
         int c = 0;

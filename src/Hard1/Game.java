@@ -1,6 +1,5 @@
 package Hard1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Game {
@@ -14,7 +13,7 @@ public class Game {
         this.cards = cards;
     }
 
-    public int StartComp() {
+    public int startComp() {
         int a = array[0];
         int b = array[1];
         int c = 0;
@@ -32,7 +31,7 @@ public class Game {
         return c;
     }
 
-    public String[] CardsComp() {
+    public String[] cardsComp() {
         String[] cardsComp = new String[2];
         int a = array[0];
         int b = array[1];
@@ -41,7 +40,7 @@ public class Game {
         return cardsComp;
     }
 
-    public int StartPlayer() {
+    public int startPlayer() {
         Scanner scanner = new Scanner(System.in);
         int a = array[2];
         int b = array[3];
@@ -76,7 +75,7 @@ public class Game {
         return e;
     }
 
-    public int AddCard( int e, int j) {
+    public int addCard( int e, int j) {
         Scanner scanner = new Scanner(System.in);
         int a = array[j];
         int d = 0;

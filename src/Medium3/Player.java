@@ -13,7 +13,7 @@ public class Player {
         this.name = name;
     }
 
-    public String ScanName() {
+    public String scanName() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите имя");
         name = scanner.next();
@@ -24,7 +24,7 @@ public class Player {
         return name;
     }
 
-    public int ScanIndex(int b) {
+    public int scanIndex(int b) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите, сколько палочек убрать, 1, 2 или 3, " + printName(name));
         a = scanner.nextInt();

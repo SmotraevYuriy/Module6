@@ -1,6 +1,5 @@
 package Hard1;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Card {
@@ -17,11 +16,11 @@ public class Card {
         };
     }
 
-    public String[][] Value() {
+    public String[][] value() {
         return value;
     }
 
-    public String[] Cards() {
+    public String[] cards() {
         String[] cards = new String[36];
         int a = 0;
         for (int i = 0; i <nameCard.length; i++) {
@@ -33,7 +32,7 @@ public class Card {
         return  cards;
     }
 
-    public int[] Array() {
+    public int[] array() {
         int[] array = new int[36];
         int a = 0;
         for (int i = 0; i < array.length; i++) {

@@ -1,7 +1,5 @@
 package Medium2;
 
-import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Player {
@@ -18,7 +16,7 @@ public class Player {
         this.field = field;
     }
 
-    public String ScanName() {
+    public String scanName() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите имя");
         name = scanner.next();
@@ -29,7 +27,7 @@ public class Player {
         return name;
     }
 
-    public int[] ScanIndex() {
+    public int[] scanIndex() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите номер ячейки, " + name);
         int a = scanner.nextInt() - 1;

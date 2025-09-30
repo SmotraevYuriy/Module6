@@ -1,6 +1,5 @@
 package Medium3;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Game {
@@ -14,7 +13,7 @@ public class Game {
         this.b = b;
     }
 
-    public int Computer(int b) {
+    public int computer(int b) {
         a = Math.abs(new Random().nextInt(2) + 1);
         if (b == 3) {
             a = 2;
@@ -28,7 +27,7 @@ public class Game {
         return b;
     }
 
-    public void Field(int b) {
+    public void field(int b) {
         for (int i = 0; i < b; i++) {
                 System.out.print(field[i] + " ");
         }
@@ -36,7 +35,7 @@ public class Game {
         System.out.println("Осталось " + b + " палочек");
     }
 
-    public int Player(int a, int b) {
+    public int player(int a, int b) {
         b = b - a;
         return b;
     }

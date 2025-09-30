@@ -11,20 +11,20 @@ public class Main {
         String name = null;
         Player player = new Player(a, b, name);
         Game game = new Game(field, a, b);
-        name = player.ScanName();
+        name = player.scanName();
         while(true) {
-            a = player.ScanIndex(b);
-            b = game.Player(a, b);
+            a = player.scanIndex(b);
+            b = game.player(a, b);
             if(b == 1) {
                 System.out.println("Победил " + player.printName(name));
                 break;
             }
-            b = game.Computer(b);
+            b = game.computer(b);
             if (b == 1) {
                 System.out.println("Победил компьютер");
                 break;
             }
-            game.Field(b);
+            game.field(b);
         }
     }
 }
